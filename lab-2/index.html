@@ -165,8 +165,24 @@
         <p>I hereby declare that all statements in the application are true, complete, and correct to the best of my knowledge and belief.</p>
     </div>
 
+    <!-- Addendum section -->
+    <div class="section">
+        <h2>Addendum</h2>
+        <p>
+            <b>&lt;header&gt;:</b> Defines the header section of the document.<br>
+            <b>&lt;footer&gt;:</b> Defines the footer section of the document.<br>
+            <b>&lt;div class="container"&gt;:</b> A container to hold all resume sections, providing a structured layout.<br>
+            <b>&lt;div class="section"&gt;:</b> Divides the resume into distinct sections such as Objective, Education, Skill Set, etc.<br>
+            <b>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;:</b> Defines headings of various levels for clarity and hierarchy.<br>
+            <b>&lt;p&gt;:</b> Used for paragraphs of text within each section.<br>
+            <b>&lt;ul&gt;, &lt;li&gt;:</b> Creates lists for items within sections such as Education, Skill Set, Work Experience, etc.<br>
+            <b>&lt;style&gt;:</b> Defines the CSS styling for the document, ensuring a consistent and visually appealing layout.<br>
+            <b>&lt;script&gt;:</b> Incorporates JavaScript to dynamically update the last modified date in the footer.<br>
+        </p>
+    </div>
+
     <!-- Footer section added dynamically using JavaScript -->
-     <footer>
+    <footer>
         <p>Last updated: 
             <span id="lastModified"></span>
         </p>
@@ -175,6 +191,5 @@
          var x = document.lastModified;
          document.getElementById('lastModified').textContent = x;
     </script>
-    </footer>
 </body>
 </html>
