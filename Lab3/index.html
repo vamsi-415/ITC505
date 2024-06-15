@@ -3,64 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vamsi's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ITC505 Lab 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Shadows Into Light', cursive;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-
-    <header id="header">
-        <nav>
-            <ul>
-                <li><a href="#intro">Introduction</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header>
+        <h1>ITC505 Lab 3</h1>
     </header>
-
-    <main id="main">
-        <section id="intro" class="section">
-            <h1>Hi, I'm Vamsi Medabalimi</h1>
-            <img src="pic.jpg" alt="Vamsi Medabalimi" id="pic">
-            <p>Welcome to my portfolio. I am passionate about learning new skills related to computer science.</p>
-        </section>
-
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Responsive Design</li>
-                <li>Django</li>
-                <li>Python</li>
-                <li>C++</li>
-            </ul>
-        </section>
-
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="project">
-                <a href="https://github.com/vamsi-415/Music-recommendation-system-using-ML" > <h3>Project 1: Music recommendation system using ML</h3> </a>
-                <p>The recommendation system contains 2 pages in which will recommend songs using the user's input preferences.The second page directly takes the user's Spotify API and recommend songs using the Spotify playlist history</p>
-            </div>
-            <div class="project">
-                <a href="https://github.com/vamsi-415/Covid-19-bed-Tracker-Project"> <h3>Project 2: Covid bed tracker</h3> </a>
-                <p>The project is related to hospital management. It provides details about number of available beds, addition and deletion of patients.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer id="footer">
-        <p>Contact: vm893@nau.edu</p>
-        <p>Last updated: <span id="lastModified"></span></p>
+    <div class="content">
+        <h2>How to Deliver a Specific Font to a Client</h2>
+        <p>
+            One popular method to deliver a font to a client is by using Google Fonts. This involves the following steps:
+        </p>
+        <ol>
+            <li><strong>Choose a Font:</strong> Visit Google Fonts and select a font that is not likely to be present on most people's computers.</li>
+            <li><strong>Embed the Font:</strong> Click on the selected font, then click on "Select this style". Copy the link tag under the "Embed" section.</li>
+            <li><strong>Add the Link to Your HTML:</strong> Paste the link inside the <code>&lt;head&gt;</code> section of your HTML file.</li>
+            <li><strong>Use the Font in Your CSS:</strong> Apply the font to your CSS by using the <code>font-family</code> property.</li>
+        </ol>
+        <p>
+            This method is simple and efficient as it leverages Google's servers to deliver the font, ensuring fast load times and easy implementation.
+        </p>
+    </div>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
     </footer>
-
-    <script>
-        var x = document.lastModified;
-        document.getElementById('lastModified').textContent = x;
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
     </script>
-
 </body>
 </html>
