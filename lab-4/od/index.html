@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi My name is Vamsi M. This is my Animated SVG Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .animation-container {
+            width: 200px;
+            height: 200px;
+        }
+
+        .animated-svg {
+            width: 100%;
+            height: 100%;
+            fill: #3498db; /* Initial color */
+            animation: colorChange 5s infinite alternate; /* Animation properties */
+        }
+
+        @keyframes colorChange {
+            0% {
+                fill: #3498db; /* Initial color */
+            }
+            100% {
+                fill: #e74c3c; /* Final color */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation-container">
+        <svg class="animated-svg" viewBox="0 0 100 100">
+            <rect x="10" y="10" width="80" height="80" rx="10" ry="10"/>
+        </svg>
+    </div>
+</body>
+</html>
