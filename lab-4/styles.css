@@ -1,68 +1,107 @@
-/* General styles */
+/* Global styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f3f0f5; /* Lavender background */
+    color: #333; /* Dark text */
     margin: 0;
     padding: 0;
-    background-color: lavender;
-    color: #333;
 }
 
-header {
-    background-color: #9b59b6; /* Purple background */
-    color: #fff;
-    padding: 30px;
-    text-align: center;
-}
-
-h1 {
-    margin: 0;
-}
-
-.subtitle {
-    font-size: 1.2em;
-    margin-top: 5px;
-    color: #ecf0f1; /* Light grey text */
-}
-
-main {
+.container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* White container background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-.section {
+header {
+    text-align: center;
     margin-bottom: 20px;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2, h3 {
-    color: #9b59b6; /* Purple headers */
+h1 {
+    font-size: 2.5rem;
+    color: #555; /* Dark gray for headers */
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #888; /* Light gray for subtitle */
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #555; /* Dark gray for section headers */
+    margin-bottom: 10px;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
-ul li {
-    margin-bottom: 5px;
+li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.project-details {
+    margin-bottom: 20px;
+}
+
+.project-details h3 {
+    font-size: 1.5rem;
+    color: #555; /* Dark gray for project titles */
 }
 
 p {
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
 footer {
-    background-color: #9b59b6; /* Purple footer */
-    color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
+    color: #888; /* Light gray for footer text */
+}
+
+/* Addendum styles */
+.addendum {
+    background-color: #f9f7fa; /* Light lavender background */
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.addendum p {
+    font-size: 0.9rem;
+}
+
+.addendum b {
+    font-weight: bold;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
 }
