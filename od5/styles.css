@@ -1,0 +1,127 @@
+/* Resetting some default browser styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    background-image: src('back.jpg');
+}
+
+/* Basic styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #f0f1f6, #f6f1f6);
+    color: #333;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Navbar styling using Flexbox */
+.navbar {
+    background: linear-gradient(to right, #333, #555);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    color: #ffdd57;
+}
+
+/* Main content styling */
+.main-content {
+    padding: 2rem;
+    height: calc(100vh - 60px); /* Adjust according to navbar height */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Full-page styling */
+.full-page {
+    width: 100%;
+    height: calc(100vh - 60px); /* Adjust according to navbar height */
+    overflow: auto;
+    padding: 2rem;
+    background: white;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Absolute positioning for headings */
+.content-section h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.content-section p {
+    color: #666;
+    line-height: 1.6;
+    margin-top: 4rem; /* Add margin to avoid overlap with absolute heading */
+}
+
+/* Example of absolute positioning for images */
+.content-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+    opacity: 0.9; /* Slightly transparent to see underlying text */
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add keyframe animation for transition effects */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Applying fadeIn animation to sections */
+.content-section {
+    animation: fadeIn 1s ease-in-out;
+}
