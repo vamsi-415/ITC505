@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Instruments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#about" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#products" onclick="showSection('products')">Products</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section id="home" class="content-section">
 
+            <br><h1 id="heading"><br>Welcome to Musical Instruments</br></h1></br>
+            <p><img src="back.jpg" style="position: relative; width: 50%; height: auto;">Welcome to our musical instrument store. Here, you'll find an extensive collection of musical instruments from all over the world, suitable for both beginners and professional musicians. Whether you're looking for a new instrument to master or a gift for a music enthusiast, we have something for everyone.</p>
+        </section>
+        <section id="about" class="content-section">
+            <h1 id="heading">About Us</h1>
+            <img src="about.jpg" alt="About Us">
+            <p>We are a passionate team of musicians and music lovers dedicated to providing the best instruments and services to our customers. Our store has been serving the music community for over 20 years, offering a wide range of instruments, accessories, and repair services. Our knowledgeable staff is here to help you find the perfect instrument to suit your needs and preferences.</p>
+        </section>
+        <section id="products" class="content-section">
+            <h1 id="heading">Our Products</h1>
+            <img src="products.jpg" alt="Our Products">
+            <p>Our product range includes a variety of musical instruments, from classical to modern. Here are some of the categories we offer:</p>
+            <ul>
+                <li><strong>Guitars:</strong> Acoustic, electric, and bass guitars from top brands.</li>
+                <li><strong>Pianos:</strong> Grand pianos, upright pianos, and digital keyboards.</li>
+                <li><strong>Drums:</strong> Drum sets, electronic drums, and percussion instruments.</li>
+                <li><strong>Strings:</strong> Violins, violas, cellos, and double basses.</li>
+                <li><strong>Wind Instruments:</strong> Flutes, clarinets, saxophones, trumpets, and more.</li>
+                <li><strong>Accessories:</strong> Strings, tuners, metronomes, sheet music, and more.</li>
+            </ul>
+        </section>
+        <section id="contact" class="content-section">
+            <h1 id="heading">Contact Us</h1>
+            <img src="contact.jpg" alt="Contact Us">
+            <p>We'd love to hear from you! Whether you have questions about our products, need assistance with your purchase, or want to learn more about our services, feel free to reach out to us. You can contact us through the following ways:</p>
+            <ul>
+                <li><strong>Email:</strong> support@musicalinstruments.com</li>
+                <li><strong>Phone:</strong> (928) 456-9229</li>
+                <li><strong>Address:</strong> 923 W Music Avenue, Suite 133, Flagstaff City, AZ 86001</li>
+                <li><strong>Social Media:</strong> Follow us on Facebook, Twitter, and Instagram for the latest updates and promotions.</li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.style.display = 'block';
+                    section.classList.add('full-page');
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+
+        // Show the home section by default
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('home');
+        });
+    </script>
+</body>
+</html>
