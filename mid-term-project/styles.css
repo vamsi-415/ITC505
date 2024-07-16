@@ -1,0 +1,52 @@
+body {
+    font-family: 'Creepster', cursive;
+    background: linear-gradient(to bottom, #222, #444);
+    color: #eee;
+    text-align: center;
+  }
+  
+  #story-container {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #666;
+    background-color: #333;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #333, #555);
+  }
+  
+  #story-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  button {
+    background-color: #555;
+    color: #eee;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-family: 'Creepster', cursive;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+    background: linear-gradient(to bottom, #555, #777);
+  }
+  
+  button:hover {
+    background-color: #777;
+  }
+  
+  @font-face {
+    font-family: 'Creepster';
+    src: url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

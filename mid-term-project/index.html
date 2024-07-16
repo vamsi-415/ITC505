@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Haunted Mansion</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>The Haunted Mansion</h1>
+  <div id="story-container">
+    <p id="story-text"></p>
+    <img id="story-image" src="" alt=""> 
+  </div>
+  <div id="choices-container"></div>
+  <script src="script.js"></script>
+  <footer>
+    <div id="addendum">
+      <p>Addendum:
+        Creating "Haunted Mansion" was an enlightening journey. 
+        The primary challenge was structuring the narrative flow to maintain coherence while offering multiple paths and endings.
+        I used a JavaScript object to organize story stages, ensuring each decision led to a unique consequence. 
+        Integrating images to enhance the visual storytelling was crucial, adding depth to each stage. 
+        Accessibility was prioritized by setting appropriate alt text for images. 
+        One significant hurdle was dynamically updating the choices presented to the player. 
+        This was resolved by clearing and repopulating the choices container with each stage update. 
+        Another challenge was ensuring that the transitions between stages were seamless, which required meticulous testing and debugging. 
+        This project sharpened my skills in dynamic DOM manipulation and event handling. 
+        The final product not only showcases a captivating story but also a robust interactive framework, demonstrating the synergy between storytelling and coding. The journey was filled with creativity, problem-solving, and a deep dive into JavaScript's capabilities.
+      </div>
+    <p>Last updated: <span id="lastModified"></span></p>
 
+  </footer>
+  <script type="text/javascript">
+    var x = document.lastModified;
+    document.getElementById('lastModified').textContent = x;
+  </script>
+</body>
+</html>
