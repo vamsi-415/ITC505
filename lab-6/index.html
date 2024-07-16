@@ -1,1 +1,61 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 - Holy Grail Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lab 6 - Holy Grail Layout</h1>
+    </header>
+    
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#" id="homeLink">Home</a></li>
+            <li><a href="#" id="aboutLink">About</a></li>
+            <li><a href="#" id="contactLink">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div id="problem-solver">
+            <h2>JavaScript Problem Solver</h2>
+            <h3>Palindrome Checker</h3>
+            <input type="text" id="palindromeInput" placeholder="Enter a word or phrase">
+            <button id="checkPalindrome">Check Palindrome</button>
+            <div id="palindromeResult"></div>
+        </div>
+        <div id="homeSection">
+            <!-- Other content as before -->
+        </div>
+        <div id="aboutSection" class="hidden">
+            <!-- About section content -->
+        </div>
+        <div id="contactSection" class="hidden">
+            <!-- Contact section content -->
+        </div>
+    </main>
+    
+    <aside>
+        <a href="https://a.co/d/cIZISfO" target="_blank">
+            <img src="image.jpg" alt="JavaScript Book" style="width:100%;">
+        </a>
+    </aside>
+    
+    <footer>
+        <p>Addendum: This page demonstrates the Holy Grail Layout using CSS Grid. It includes a number guessing game and a palindrome checker implemented in JavaScript. The main challenges were implementing the layout correctly and ensuring the JavaScript functions worked as intended.</p>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
