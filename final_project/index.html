@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project: Revenge of Lights Out</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Final Project: Revenge of Lights Out</h1>
+
+    <div id="play">
+        <button id="start">Start Game</button>
+    </div>
+
+    <div id="tiles" style="display:none;">
+        <div class="tile-grid">
+            <!-- Assuming a 5x5 grid of tiles with ids from 1 to 25 -->
+            <div class="tile middle" id="1"></div>
+            <div class="tile middle" id="2"></div>
+            <div class="tile middle" id="3"></div>
+            <div class="tile middle" id="4"></div>
+            <div class="tile middle" id="5"></div>
+            <div class="tile middle" id="6"></div>
+            <div class="tile middle" id="7"></div>
+            <div class="tile middle" id="8"></div>
+            <div class="tile middle" id="9"></div>
+            <div class="tile middle" id="10"></div>
+            <div class="tile middle" id="11"></div>
+            <div class="tile middle" id="12"></div>
+            <div class="tile middle" id="13"></div>
+            <div class="tile middle" id="14"></div>
+            <div class="tile middle" id="15"></div>
+            <div class="tile middle" id="16"></div>
+            <div class="tile middle" id="17"></div>
+            <div class="tile middle" id="18"></div>
+            <div class="tile middle" id="19"></div>
+            <div class="tile middle" id="20"></div>
+            <div class="tile middle" id="21"></div>
+            <div class="tile middle" id="22"></div>
+            <div class="tile middle" id="23"></div>
+            <div class="tile middle" id="24"></div>
+            <div class="tile middle" id="25"></div>
+        </div>
+        <div id="count">Moves: 0</div>
+        <button id="helpBtn">Help</button>
+    </div>
+
+    <div id="win" style="display:none;">
+        <h2>Congratulations, You Win!</h2>
+    </div>
+
+    <dialog id="helpDialog">
+        <h2>Help</h2>
+        <p>Instructions for the game...</p>
+        <button id="closeBtn">Close</button>
+    </dialog>
+
+    <!-- Addendum -->
+    <section id="addendum">
+        <h2>Addendum - Process and Creative Choices</h2>
+        <p><strong>Process:</strong> The initial step was to structure the HTML to create a simple and accessible interface. This included a start button, the game grid, a moves counter, and a help dialog. The CSS was created to ensure a clean and responsive design. A grid layout was used to arrange the tiles, and a button style was implemented for a cohesive look. JavaScript was used to handle the game logic, including starting the game, generating random patterns, handling tile clicks, and checking for a win condition. CSS classes (<code>is-off</code>) were used to manage tile states, allowing for easy toggling and styling without directly manipulating styles in JavaScript.</p>
+        
+        <p><strong>Creative Choices:</strong> A 5x5 grid was chosen for simplicity and clarity. The layout is easily scalable for larger grids. White and black were used for on and off states, providing a clear visual distinction. The Roboto font was selected for a modern and clean appearance. Ensuring the game works well on different devices and screen sizes was a priority.</p>
+        
+        <p><strong>Challenges:</strong> Ensuring that the correct surrounding tiles toggle correctly was a bit challenging. This was addressed by carefully checking the position of each tile (middle, edge, corner) and toggling only the valid surrounding tiles. Counting the "off" tiles to determine if the game is won needed a clear and efficient approach. Iterating through all tiles and checking their state solved this.</p>
+        
+        <p><strong>Insights Gained:</strong> Keeping CSS and JavaScript separate for styling and functionality, respectively, makes the code more maintainable. Using CSS Grid is a powerful way to handle game layouts. Adding event listeners efficiently and ensuring they work correctly across different elements enhances user interaction.</p>
+    </section>
+
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
