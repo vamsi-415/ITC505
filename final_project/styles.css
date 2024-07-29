@@ -1,0 +1,104 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+
+#tiles {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tile-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+/* Updated tile styles */
+.tile {
+    width: 60px; /* Set your preferred width */
+    height: 60px; /* Set your preferred height */
+    background: #0e0e0e; /* Default color (off) */
+    border: 2px solid #555; /* Border for the tile */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition */
+    box-shadow: 0 0 15px #ffff00; /* Optional glow effect for unlit tiles */
+}
+
+.tile.on {
+    background-color: white; /* Color when on (lit) */
+}
+
+.tile:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Buttons */
+#start, #helpBtn, #closeBtn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+#start:hover, #helpBtn:hover, #closeBtn:hover {
+    background: #45a049;
+}
+
+#count {
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#win {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#helpDialog {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+footer {
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+}
